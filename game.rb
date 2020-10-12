@@ -16,6 +16,7 @@ class Game
   @alternator = 0
   while @player1.lives != 0 && @player2.lives != 0
     @question = Question.new
+    puts "----- NEW TURN -----"
     if @alternator == 0
       puts "#{@player1.name}: #{@question.question}"
       print "> "
